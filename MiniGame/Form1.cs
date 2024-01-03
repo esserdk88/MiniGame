@@ -129,10 +129,16 @@ namespace MiniGame
             }
 
             //Victorycheck
+            victoryCheck();
+
+        }
+
+        private void victoryCheck()
+        {
             bool victoryCheck = true;
             foreach (Button b in _buttonList)
             {
-                if(b.BackColor == _offColor)
+                if (b.BackColor == _offColor)
                 {
                     victoryCheck = false;
                 }
@@ -141,7 +147,6 @@ namespace MiniGame
             {
                 MessageBox.Show("You have won the game!");
             }
-
         }
     }
 }
