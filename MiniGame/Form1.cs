@@ -20,6 +20,19 @@ namespace MiniGame
             InitializeComponent();
             InitializeButtonList();
             InitializeColors();
+            InitializePuzzle();
+        }
+
+        private void InitializePuzzle()
+        {
+            Random rnd = new Random();
+            foreach (Button button in _buttonList)
+            {
+                if (rnd.Next(2) == 1)
+                {
+                    flipButtonColor(button);
+                }
+            }
         }
 
         private void InitializeColors()
