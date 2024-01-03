@@ -1,0 +1,10 @@
+C:\Users\rasmu\source\repos\MiniGame\MiniGame\bin\Debug\MiniGame.exe.config
+C:\Users\rasmu\source\repos\MiniGame\MiniGame\bin\Debug\MiniGame.exe
+C:\Users\rasmu\source\repos\MiniGame\MiniGame\bin\Debug\MiniGame.pdb
+C:\Users\rasmu\source\repos\MiniGame\MiniGame\obj\Debug\MiniGame.csproj.AssemblyReference.cache
+C:\Users\rasmu\source\repos\MiniGame\MiniGame\obj\Debug\MiniGame.Form1.resources
+C:\Users\rasmu\source\repos\MiniGame\MiniGame\obj\Debug\MiniGame.Properties.Resources.resources
+C:\Users\rasmu\source\repos\MiniGame\MiniGame\obj\Debug\MiniGame.csproj.GenerateResource.cache
+C:\Users\rasmu\source\repos\MiniGame\MiniGame\obj\Debug\MiniGame.csproj.CoreCompileInputs.cache
+C:\Users\rasmu\source\repos\MiniGame\MiniGame\obj\Debug\MiniGame.exe
+C:\Users\rasmu\source\repos\MiniGame\MiniGame\obj\Debug\MiniGame.pdb
