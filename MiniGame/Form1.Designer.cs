@@ -41,6 +41,7 @@
             this.lbl_Timer = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btn_NewGame = new System.Windows.Forms.Button();
+            this.btn_Quit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -136,7 +137,7 @@
             // lbl_Timer
             // 
             this.lbl_Timer.AutoSize = true;
-            this.lbl_Timer.Location = new System.Drawing.Point(300, 12);
+            this.lbl_Timer.Location = new System.Drawing.Point(300, 51);
             this.lbl_Timer.Name = "lbl_Timer";
             this.lbl_Timer.Size = new System.Drawing.Size(51, 13);
             this.lbl_Timer.TabIndex = 9;
@@ -144,19 +145,29 @@
             // 
             // btn_NewGame
             // 
-            this.btn_NewGame.Location = new System.Drawing.Point(300, 79);
+            this.btn_NewGame.Location = new System.Drawing.Point(300, 108);
             this.btn_NewGame.Name = "btn_NewGame";
-            this.btn_NewGame.Size = new System.Drawing.Size(104, 23);
+            this.btn_NewGame.Size = new System.Drawing.Size(90, 90);
             this.btn_NewGame.TabIndex = 10;
             this.btn_NewGame.Text = "New Game";
             this.btn_NewGame.UseVisualStyleBackColor = true;
             this.btn_NewGame.Click += new System.EventHandler(this.btn_NewGame_Click);
+            // 
+            // btn_Quit
+            // 
+            this.btn_Quit.Location = new System.Drawing.Point(300, 204);
+            this.btn_Quit.Name = "btn_Quit";
+            this.btn_Quit.Size = new System.Drawing.Size(90, 90);
+            this.btn_Quit.TabIndex = 11;
+            this.btn_Quit.Text = "Quit";
+            this.btn_Quit.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(416, 306);
+            this.Controls.Add(this.btn_Quit);
             this.Controls.Add(this.btn_NewGame);
             this.Controls.Add(this.lbl_Timer);
             this.Controls.Add(this.button9);
@@ -189,6 +200,7 @@
         private System.Windows.Forms.Label lbl_Timer;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btn_NewGame;
+        private System.Windows.Forms.Button btn_Quit;
     }
 }
 
