@@ -15,12 +15,27 @@ namespace MiniGame
         List<Button> _buttonList;
         Color _onColor;
         Color _offColor;
+
+        Timer _timer;
+
+        double elapsedTimeInSeconds;
         public Form1()
         {
             InitializeComponent();
+            InitializeTimer();
             InitializeButtonList();
             InitializeColors();
             InitializePuzzle();
+        }
+
+        private void InitializeTimer()
+        {
+            _timer = new Timer();
+            elapsedTimeInSeconds = 0;
+
+            _timer.Interval = 100;
+
+            _timer.Tick += Timer_Tick;
         }
 
         private void InitializePuzzle()
@@ -33,6 +48,8 @@ namespace MiniGame
                     flipButtonColor(button);
                 }
             }
+
+            _timer.Start();
         }
 
         private void InitializeColors()
@@ -61,6 +78,15 @@ namespace MiniGame
                 button8,
                 button9
             };
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Update the elapsed time
+            elapsedTimeInSeconds += 0.1; // Increment by 0.1 seconds
+
+            // Update the label with the formatted time
+            lbl_Timer.Text = "Time: " + elapsedTimeInSeconds.ToString("0.0") + " seconds";
         }
 
         private List<Button> getAdjacentButtons(Button root)
@@ -145,8 +171,15 @@ namespace MiniGame
             }
             if (victoryCheck)
             {
-                MessageBox.Show("You have won the game!");
+                _timer.Stop();
+                MessageBox.Show("You have won the game! - Time " + elapsedTimeInSeconds);
             }
+        }
+
+        private void btn_NewGame_Click(object sender, EventArgs e)
+        {
+            elapsedTimeInSeconds = 0;
+            InitializePuzzle();
         }
     }
 }
