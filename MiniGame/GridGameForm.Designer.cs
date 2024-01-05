@@ -1,6 +1,6 @@
 ﻿namespace MiniGame
 {
-    partial class Form1
+    partial class GridGameForm
     {
         /// <summary>
         /// Required designer variable.

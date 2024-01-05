@@ -29,20 +29,32 @@
         private void InitializeComponent()
         {
             this.panel_Left = new System.Windows.Forms.Panel();
+            this.btn_GridGame = new System.Windows.Forms.Button();
             this.panel_Bottom = new System.Windows.Forms.Panel();
             this.panel_Center = new System.Windows.Forms.Panel();
-            this.btn_GridGame = new System.Windows.Forms.Button();
+            this.btn_YatzyRoller = new System.Windows.Forms.Button();
             this.panel_Left.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Left
             // 
+            this.panel_Left.Controls.Add(this.btn_YatzyRoller);
             this.panel_Left.Controls.Add(this.btn_GridGame);
             this.panel_Left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Left.Location = new System.Drawing.Point(0, 0);
             this.panel_Left.Name = "panel_Left";
             this.panel_Left.Size = new System.Drawing.Size(179, 745);
             this.panel_Left.TabIndex = 0;
+            // 
+            // btn_GridGame
+            // 
+            this.btn_GridGame.Location = new System.Drawing.Point(12, 115);
+            this.btn_GridGame.Name = "btn_GridGame";
+            this.btn_GridGame.Size = new System.Drawing.Size(161, 23);
+            this.btn_GridGame.TabIndex = 0;
+            this.btn_GridGame.Text = "Grid Game";
+            this.btn_GridGame.UseVisualStyleBackColor = true;
+            this.btn_GridGame.Click += new System.EventHandler(this.btn_GridGame_Click);
             // 
             // panel_Bottom
             // 
@@ -60,15 +72,15 @@
             this.panel_Center.Size = new System.Drawing.Size(676, 645);
             this.panel_Center.TabIndex = 2;
             // 
-            // btn_GridGame
+            // btn_YatzyRoller
             // 
-            this.btn_GridGame.Location = new System.Drawing.Point(12, 115);
-            this.btn_GridGame.Name = "btn_GridGame";
-            this.btn_GridGame.Size = new System.Drawing.Size(161, 23);
-            this.btn_GridGame.TabIndex = 0;
-            this.btn_GridGame.Text = "Grid Game";
-            this.btn_GridGame.UseVisualStyleBackColor = true;
-            this.btn_GridGame.Click += new System.EventHandler(this.btn_GridGame_Click);
+            this.btn_YatzyRoller.Location = new System.Drawing.Point(12, 144);
+            this.btn_YatzyRoller.Name = "btn_YatzyRoller";
+            this.btn_YatzyRoller.Size = new System.Drawing.Size(161, 23);
+            this.btn_YatzyRoller.TabIndex = 1;
+            this.btn_YatzyRoller.Text = "Yatzy Roller";
+            this.btn_YatzyRoller.UseVisualStyleBackColor = true;
+            this.btn_YatzyRoller.Click += new System.EventHandler(this.btn_YatzyRoller_Click);
             // 
             // MainMenu
             // 
@@ -91,5 +103,6 @@
         private System.Windows.Forms.Panel panel_Bottom;
         private System.Windows.Forms.Panel panel_Center;
         private System.Windows.Forms.Button btn_GridGame;
+        private System.Windows.Forms.Button btn_YatzyRoller;
     }
 }

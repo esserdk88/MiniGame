@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MiniGame
 {
-    public partial class Form1 : Form
+    public partial class GridGameForm : Form
     {
         List<Button> _buttonList;
         Color _onColor;
@@ -19,7 +19,7 @@ namespace MiniGame
         Timer _timer;
 
         double elapsedTimeInSeconds;
-        public Form1()
+        public GridGameForm()
         {
             InitializeComponent();
             InitializeTimer();
