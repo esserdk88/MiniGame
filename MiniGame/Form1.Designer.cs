@@ -161,6 +161,7 @@
             this.btn_Quit.TabIndex = 11;
             this.btn_Quit.Text = "Quit";
             this.btn_Quit.UseVisualStyleBackColor = true;
+            this.btn_Quit.Click += new System.EventHandler(this.btn_Quit_Click);
             // 
             // Form1
             // 
@@ -179,6 +180,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Minigame";
             this.ResumeLayout(false);

@@ -181,5 +181,10 @@ namespace MiniGame
             elapsedTimeInSeconds = 0;
             InitializePuzzle();
         }
+
+        private void btn_Quit_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
